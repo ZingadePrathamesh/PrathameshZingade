@@ -1,0 +1,50 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #0c0c0c;
+    position: absolute;
+    width: 100%;
+    padding: 2% 0;
+}
+
+.nav-left{
+    flex-grow: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.nav-right{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding-right: 10%;
+}
+
+.nav-left ul{
+    display: flex;
+    flex-direction: row;
+}
+.nav-left li{
+    list-style: none;
+    padding-right: 20%;
+    background: linear-gradient(to right, #FFFFFF, #F2613F);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.menu-icon{
+    display: none;
+}
+
+nav button{
+    padding: 3% 10%;
+    border-radius: 8px;
+    border: solid 0px 0px 1px rgb(#F2613F);
+    background-color: #0c0c0c;
+    color: #F2613F ;
+}
