@@ -4,7 +4,7 @@ nav{
     align-items: center;
     background: #0c0c0c;
     width: 100%;
-    padding: 2% 0;
+    position: fixed;
 }
 
 .nav-left{
@@ -37,7 +37,7 @@ nav{
 }
 
 .nav-left li:hover{
-    background: white;
+    background: linear-gradient(to right, #FFFFFF, #F2613F);
     color: black;
     box-shadow: 0 0 15px 2px  #F2613F;
 }
@@ -77,12 +77,14 @@ nav button:hover{
     }
     .nav-left-ul{
         display: flex;
+        background: #0c0c0c;
         flex-direction: column;
         align-items: end;
         position: fixed;
-        top: 8%;
+        top: 4%;
         right: -100vw;
         padding: 5% 10%;
+        padding-left: 15%;
         box-shadow: 0 0 15px 2px #FFFFFF;
         transition: right 1s, box-shadow 0.2s;
     }
@@ -97,6 +99,7 @@ nav button:hover{
     }
 
     .nav-left li{
-        padding: 30% 5%;
+        margin:20% 0%;
+        padding: 10% 15%;
     }
 }

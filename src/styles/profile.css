@@ -1,0 +1,75 @@
+
+
+
+.profile-div{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img{
+    width: 25vw;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #F2613F;
+    box-shadow: 0 0 15px 2px #F2613F;
+    transition: border 0.5s, box-shadow 0.5s;
+}
+.profile-img:hover{
+    width: 25vw;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 15px 2px #ffffff;
+}
+.textual{
+    margin-left: 2%;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    line-height: 120%;
+    font-size: xx-large;
+    color: #F2613F;
+    cursor: pointer;
+}
+.name h1{
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+/* Apply text shadow to h1 elements inside .name class on hover */
+h1:hover, .namaskar:hover, .subtitle:hover {
+    text-shadow: 0 0 10px #F2613F;
+}
+
+br{
+    margin: 0.5em;
+}
+
+.white{
+    color: white;
+}
+
+.subtitle{
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(to right, #FFFFFF, #F2613F);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.namaskar{
+    margin: 0px;
+    margin-bottom: 0.8em;
+    padding: 0px;
+    background: linear-gradient(to right, #FFFFFF, #F2613F);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

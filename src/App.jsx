@@ -1,10 +1,15 @@
 import '../src/App.css';
 import Navbar from './components/Navbar';
+import Profile from './components/Profile';
 
 function App() {
 
   return (
-    <Navbar/>
+    <div>
+      <Navbar/>
+      <Profile/>
+    </div>
+
   )
 }
 
