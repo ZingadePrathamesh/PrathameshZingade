@@ -1,6 +1,9 @@
 import '../styles/profile.css'
 
 import myImage from '../assets/profile1.jpg';
+import { LiaGithub, LiaLinkedinIn } from 'react-icons/lia';
+import { RiTwitterXLine } from 'react-icons/ri';
+import { IoMdMail } from 'react-icons/io';
 
 export default function Profile(){
     const name ="PRATHAMESH"
@@ -42,8 +45,11 @@ export default function Profile(){
                 <div>
                     <h3 className='montserrat-regular subtitle'>I develop applications, which looks good and perform better!</h3>
                 </div>
-                <div>
-
+                <div className='social-media-icons'>
+                    <a  href='https://github.com/ZingadePrathamesh' target='_blank'><LiaGithub className='icon' size={30} /></a>
+                    <a href='https://twitter.com/prathameshz2002' target='_blank'><RiTwitterXLine className='icon' size={24}/></a>
+                    <a href='https://www.linkedin.com/in/prathamesh-zingade/' target='_blank'><LiaLinkedinIn className='icon' size={30} /></a>
+                    <a href='' target='_blank'><IoMdMail className='icon' size={30}/> </a>
                 </div>
             </div>
         </div>

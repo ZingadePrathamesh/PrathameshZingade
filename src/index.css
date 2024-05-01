@@ -7,6 +7,7 @@ body{
   padding: 0;
   font-family: 'montserrat';
   background: #0c0c0c;
+  overflow-x: hidden;
 }
 
 .root{
@@ -42,4 +43,29 @@ body{
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
+}
+
+body::-webkit-scrollbar {
+  background: linear-gradient(to bottom, #0c0c0c, #0c0c0c);
+  width: 8px;    
+  opacity: 0;           /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  display: none;
+  z-index: 1;
+  opacity: 0;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  z-index: 1;
+  cursor: grab;
+  background: linear-gradient(to bottom, #0c0c0c, #F2613F);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+    /* creates padding around scroll thumb */
+}
+body::-webkit-scrollbar-thumb:active {
+  cursor: grabbing;
+  background: linear-gradient(to bottom, #000000, #F2613F);    /* color of the scroll thumb */
+
 }
