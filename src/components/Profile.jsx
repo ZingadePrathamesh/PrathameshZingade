@@ -18,7 +18,7 @@ export default function Profile(){
     return(
         <div className="profile-div">
             <div className="visual">
-                <img src={myImage} className='profile-img' alt='prathamesh zingade'/>
+                <img src={myImage} className='profile-img' alt='This is the picture of prathamesh zingade'/>
             </div>
             <div className="textual">
                 <div>
@@ -28,16 +28,16 @@ export default function Profile(){
                     <div>
                         {nameArray.map((letter, index) => {
                             if (index <= 2) {
-                                return <h1 className='white' id='glow-text'>{letter}</h1>; // Return JSX element
+                                return <h4 className='white' id='glow-text'>{letter}</h4>; // Return JSX element
                             } else {
-                                return <h1 id='glow-text'>{letter}</h1>; // Return JSX element
+                                return <h4 id='glow-text'>{letter}</h4>; // Return JSX element
                             }
                         })}
                     </div>
                     <div>
                         {surnameArray.map((letter, index) => {
-                            if(surname.length-index <= 3) return <h1 className='white' id='glow-text'>{letter}</h1>
-                            else return <h1 id='glow-text'>{letter}</h1>
+                            if(surname.length-index <= 3) return <h4 className='white' id='glow-text'>{letter}</h4>
+                            else return <h4 id='glow-text'>{letter}</h4>
                         }
                         )}
                     </div>

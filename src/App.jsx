@@ -1,6 +1,7 @@
 import '../src/App.css';
 import Navbar from './components/Navbar';
 import Profile from './components/Profile';
+import Services from './components/Services';
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
     <div>
       <Navbar/>
       <Profile/>
-      <Profile/>
+      <Services/>
     </div>
 
   )

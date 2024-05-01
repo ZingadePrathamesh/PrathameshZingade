@@ -20,6 +20,7 @@
     margin-top: 3%;
 }
 .textual{
+    margin-top:5%;
     margin-left: 2%;
 }
 .profile-img:hover{
@@ -32,19 +33,19 @@
     flex-direction: column;
     margin: 0;
     padding: 0;
-    line-height: 120%;
-    font-size: xx-large;
+    line-height: 80%;
+    font-size: 480%;
     color: #F2613F;
     cursor: pointer;
 }
-.name h1{
+.name h4{
     display: inline;
     padding: 0;
     margin: 0;
 }
 
 /* Apply text shadow to h1 elements inside .name class on hover */
-h1:hover, .namaskar:hover, .subtitle:hover {
+h4:hover, .namaskar:hover, .subtitle:hover {
     text-shadow: 0 0 10px #F2613F;
 }
 
@@ -58,6 +59,7 @@ br{
 
 .subtitle{
     margin: 0px;
+    margin-top:3%;
     padding: 0px;
     background: linear-gradient(to right, #FFFFFF, #F2613F);
     -webkit-background-clip: text;
@@ -121,7 +123,7 @@ br{
     .name{
         margin: 5% 0;
         align-items: center;
-        font-size: x-large;
+        font-size: 360%;
     }
     .subtitle{
         margin: 5% 0;
@@ -130,7 +132,7 @@ br{
     .social-media-icons{
         display: flex;
         margin: auto;
-        width: 40%;
+        width: 30%;
         align-items: center;
         justify-content: space-between;
     }

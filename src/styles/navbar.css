@@ -68,6 +68,9 @@ nav button:hover{
     .menu-icon{
         display: block;
     }
+    .menu-icon.active{
+        filter: drop-shadow(0 0 4px #F2613F);
+    }
 
     .connect-btn-li{
         display: block;
