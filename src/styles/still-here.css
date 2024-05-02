@@ -1,0 +1,112 @@
+.still-here{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.still-here-heading{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.still-here-head{
+    color: #F2613F;
+}
+.still-here-white{
+    color: white;
+}
+.still-here-head, .still-here-white{
+    font-size: 480%;
+    margin: 0 1%;
+    padding: 0;
+}
+.still-here-head:hover{
+    filter: drop-shadow(0 0 10px rgb(255, 255, 255)); /* Add glow effect */
+}
+.still-here-white:hover{
+    filter: drop-shadow(0 0 4px rgb(242, 97, 63)); /* Add glow effect */
+}
+
+.still-here-subhead{
+    color: white;
+    letter-spacing: 0.1em;
+    font-size: 100%;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 7% ;
+}
+
+.still-here-bottom{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.still-here-text{
+    background: linear-gradient(to right, #FFFFFF, #F2613F);
+    background-clip: text;
+    color: transparent;
+    text-align: justify;
+}
+
+.spiral-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+.spirals{
+    color: #F2613F;
+    font-size: 160%;
+    transition: all 0.5s;
+}
+.spirals:hover{
+    color: #ffffff;
+    filter: drop-shadow(0 0 10px #F2613F);
+    transform: rotateZ(720deg);
+}
+.connect-div{
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 763px){
+    .still-here-head, .still-here-white{
+        font-size: 300%;
+        margin: 0 1%;
+    }
+    .still-here-subhead{
+        text-align: center;
+        width: 80%;
+        margin: 3% 0%;
+    }
+    
+    .still-here-text{
+        font-size: 80%;
+    }
+
+    .spirals{
+        font-size: 120%;
+    }
+    .connect-div{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .still-here-bottom{
+        width: 80%;
+        height: 40%;
+        margin-top: 5%;
+    }
+}
