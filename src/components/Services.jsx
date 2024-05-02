@@ -51,8 +51,8 @@ export default function Services(){
                                 elements.push(
                                     <div className='service-l'>
                                         <div className='service-l-text'>
-                                            <h1 className='montserrat-regular service-l-head'>{servicesHeadings[i]}</h1>
-                                            <h2 className='montserrat-light service-l-subhead'>{servicesSubHeadings[i]}</h2>
+                                            <h1 className='montserrat-bold service-l-head'>{servicesHeadings[i]}</h1>
+                                            <h2 className='montserrat-regular service-l-subhead'>{servicesSubHeadings[i]}</h2>
                                         </div>
                                         {React.createElement(iconArray[i], { className: 'service-l-icon' })}
                                     </div>
@@ -81,8 +81,8 @@ export default function Services(){
                                     <div className='service-r' key={i}>
                                         {React.createElement(iconArray[i], { className: 'service-r-icon' })}
                                         <div className='service-r-text'>
-                                            <h1 className='montserrat-regular service-r-head'>{servicesHeadings[i]}</h1>
-                                            <h2 className='montserrat-light service-r-subhead'>{servicesSubHeadings[i]}</h2>
+                                            <h1 className='montserrat-bold service-r-head'>{servicesHeadings[i]}</h1>
+                                            <h2 className='montserrat-regular service-r-subhead'>{servicesSubHeadings[i]}</h2>
                                         </div>
                                     </div>
                                 );
