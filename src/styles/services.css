@@ -48,6 +48,7 @@
     display: flex;
     flex-direction: column;
     width: 45%;
+    height: 100%;
     align-items: center;
 }
 
@@ -118,10 +119,29 @@
 
 .service-l-icon, .service-r-icon{
     transition: color 0.5s;
-    font-size: 3vw;
+    font-size: 240%;
     color: #F2613F;
 }
 .service-r-icon:hover, .service-l-icon:hover{
     color: white;
     filter: drop-shadow(0 0 4px #F2613F);
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .service-r-text, .service-l-text{
+        align-items: center;
+        justify-content: center;
+    }
+    .service-r-head, .service-l-head{
+        font-size: 100%;
+    }
+    .service-r-subhead, .service-l-subhead{
+        font-size: 70%;
+        text-align: center;
+    }
+    .service-l-icon, .service-r-icon{
+        font-size: 160%;
+    }
 }
