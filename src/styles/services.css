@@ -25,8 +25,16 @@
     flex-direction: column;
     flex-grow: 3;
     background-color: aqua;
-    justify-content: center;
     align-items: center;
+}
+
+.left{
+    align-items: end;
+    padding-right: 5%;
+}
+.right{
+    align-items: start;
+    padding-left: 5%;
 }
 .middle{
     display: flex;
@@ -44,5 +52,87 @@
 }
 .white{
     color: white;
+}
+
+.service-l{
+    display: flex;
+    align-items: center;
+    background: gainsboro;
+    width: 70%;
+    margin: 3% 0;
+}
+
+.service-l-text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    background: pink;
+}
+
+.service-l-head{
+    font-size: 2em;
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(to right, #FFFFFF, #F2613F);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.service-l-subhead{
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #FFFFFF, #F2613F);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.service-l-icon{
+    margin-left: 5%;
+    font-size: 5vw;
+    color: #F2613F;
+}
+
+.service-r{
+    display: flex;
+    align-items: center;
+    background: gainsboro;
+    width: 70%;
+    margin: 3% 0;
+}
+
+.service-r-text{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    background: pink;
+}
+
+.service-r-head{
+    font-size: 2em;
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(to left, #FFFFFF, #F2613F);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.service-r-subhead{
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #FFFFFF, #F2613F);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.service-r-icon{
+    margin-right: 5%;
+    font-size: 5vw;
+    color: #F2613F;
 }
 
