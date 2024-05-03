@@ -21,7 +21,7 @@ export default function Navbar(){
                 </div>
                 <div className="nav-right">
                     <button className="connect-btn">CONNECT</button>
-                    {!menuClicked && <LiaBarsSolid color="#F2613F" className="menu-icon" size={40} onClick={()=>{setMenuClicked(!menuClicked)}} tra/>}
+                    {!menuClicked && <LiaBarsSolid color="#F2613F" className="menu-icon" size={40} onClick={()=>{setMenuClicked(!menuClicked)}}/>}
                     {menuClicked && <LiaTimesSolid color="#FFFFFF" className="menu-icon active" size={40} onClick={()=>{setMenuClicked(!menuClicked)}} />}
                 </div>
             </nav>

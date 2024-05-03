@@ -71,7 +71,7 @@ export default function Services(){
                             const elements = [];
                             for (let i = 0; i < iconArray.length-3; i++) {
                                 elements.push(
-                                    <div className='service-l' style={{ flexDirection: flexDirection }}>
+                                    <div className='service-l' style={{ flexDirection: flexDirection }} key={i}>
                                         {/* Conditionally render based on flex direction */}
                                         {flexDirection === 'row' ? (
                                             <>
@@ -101,8 +101,8 @@ export default function Services(){
                     {
                         servicesArray.map((letter, index)=>
                         {
-                            if(index <=2) return <h4 className='service-letter white'>{letter}</h4>
-                            else return <h4 className='service-letter'>{letter}</h4> 
+                            if(index <=2) return <h4 className='service-letter white' key={index}>{letter}</h4>
+                            else return <h4 className='service-letter' key={index}>{letter}</h4> 
                         }
                         )
                     }

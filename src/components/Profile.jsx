@@ -28,16 +28,16 @@ export default function Profile(){
                     <div>
                         {nameArray.map((letter, index) => {
                             if (index <= 2) {
-                                return <h4 className='white' id='glow-text'>{letter}</h4>; // Return JSX element
+                                return <h4 className='white' id='glow-text' key={index}>{letter}</h4>; // Return JSX element
                             } else {
-                                return <h4 id='glow-text'>{letter}</h4>; // Return JSX element
+                                return <h4 id='glow-text' key={index}>{letter}</h4>; // Return JSX element
                             }
                         })}
                     </div>
                     <div>
                         {surnameArray.map((letter, index) => {
-                            if(surname.length-index <= 3) return <h4 className='white' id='glow-text'>{letter}</h4>
-                            else return <h4 id='glow-text'>{letter}</h4>
+                            if(surname.length-index <= 3) return <h4 className='white' id='glow-text' key={index}>{letter}</h4>
+                            else return <h4 id='glow-text' key={index}>{letter}</h4>
                         }
                         )}
                     </div>

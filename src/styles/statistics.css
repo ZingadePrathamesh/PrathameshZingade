@@ -5,6 +5,7 @@
     height: 100vh;
     align-items: center;
     justify-content: center;
+
 }
 
 .statistics-heading, .circles-div{
@@ -24,7 +25,12 @@
     padding: 0;
     text-shadow: none; /* Reset text-shadow initially */
 }
-
+.statistics-letter:hover {
+    color: white;
+}
+.statistics-white:hover{
+    color: #F2613F;
+}
 .statistics-white {
     color: white;
     animation: glowAnimation 2s linear infinite;
@@ -47,22 +53,20 @@
     }
 }
 
-
-
-
 .sub-head, .value{
     padding: 0;
     margin: 0;
     text-align: center;
-    transition: all 0.3s;
+    /* transition: all 0.3s; */
 }
 .sub-head{
     font-size: 160%;
     color: white;
+    animation: glowAnimation 4s linear infinite;
 }
 
 .value{
-    font-size: 200%;
+    font-size: 280%;
     color: #F2613F;
 }
 
@@ -80,32 +84,34 @@
 @keyframes borderAnimation {
     0% {
         border-image-slice: 1;
-        border-image-source: radial-gradient(circle at top, #F2613F, transparent);
+        /* border-image-source: radial-gradient(circle at top, #F2613F, transparent); */
+        box-shadow: 0 2px 4px 2px #F2613F;
     }
     25% {
         border-image-slice: 1;
-        border-image-source: radial-gradient(circle at right, #F2613F, #F6A16B, transparent);
+        /* border-image-source: radial-gradient(circle at right, #F2613F, #F6A16B, transparent); */
+        box-shadow: 2px 0px 4px 2px #F6A16B;
     }
     50% {
         border-image-slice: 1;
-        border-image-source: radial-gradient(circle at bottom, #F6A16B, #FBEAC8, transparent);
+        /* border-image-source: radial-gradient(circle at bottom, #F6A16B, #FBEAC8, transparent); */
+        box-shadow: 0px -2px 4px 2px #FBEAC8;
+
     }
     75% {
         border-image-slice: 1;
-        border-image-source: radial-gradient(circle at left, #FBEAC8, white, transparent);
+        /* border-image-source: radial-gradient(circle at left, #FBEAC8, white, transparent); */
+        box-shadow: -2px 0px 4px 2px #FFFFFF;
+
     }
     100% {
         border-image-slice: 1;
-        border-image-source: radial-gradient(circle at top, white, #F2613F, transparent);
+        /* border-image-source: radial-gradient(circle at top, white, #F2613F, transparent); */
+        box-shadow: 0 2px 4px 2px #F2613F;
     }
 }
 
-
-
-
-
 .circle:hover{
-
     .sub-head{
         color: #F2613F;
     }
@@ -114,5 +120,30 @@
         color: white;
         text-shadow: 0 0 15px #F2613F;
     }
+}
 
+@media only screen and (max-width:763px) {
+    .statistics{
+        height: auto;
+    }
+    .statistics-white, .statistics-letter {
+        font-size: 320%;
+    }
+    .circles-div{
+        flex-direction: column;
+    }
+
+    .circle{
+        width: 200px;
+        height: 200px;
+        margin: 5% 0;
+    }
+
+    .sub-head{
+        font-size: 120%;
+    }
+    
+    .value{
+        font-size: 160%;
+    }
 }

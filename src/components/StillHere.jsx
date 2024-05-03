@@ -15,10 +15,10 @@ export default function StillHere(){
                 {
                     stillHere.map((letter, index)=>{
                         if (letter === ""|| index === 5) {
-                            return <h2 className='still-here-head'>&#8201;</h2>
+                            return <h2 className='still-here-head' key={index} >&#8201;</h2>
                         }
                         else{
-                            return <h2 className={(index<5 || index === stillHere.length-1)? "still-here-head montserrat-extra-bold":"still-here-white montserrat-extra-bold"}>{letter}</h2>
+                            return <h2  key={index} className={(index<5 || index === stillHere.length-1)? "still-here-head montserrat-extra-bold":"still-here-white montserrat-extra-bold"}>{letter}</h2>
                         }
                     })
                 }
