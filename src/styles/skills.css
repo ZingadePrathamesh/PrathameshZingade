@@ -76,6 +76,7 @@
     box-shadow: 0 0 8px 2px #F2613F;
     z-index: 3;
     scale: 1.2;
+    cursor: crosshair;
 }
 .white-cell{
     display: flex;
@@ -116,4 +117,35 @@
     margin: 3% 3%;
     line-height: 160%;
     text-align: center;
+}
+
+@media only screen and (max-width:767px){
+    .skills{
+        height: 100vh;
+    }
+    .skills-subtitle{
+        text-align: center;
+        font-size: 80%;
+        margin: 5% 10%;
+    }
+    .skills-letter, .skills-white{
+        font-size: 240%;
+    }
+    .skills-collage{
+        height: 90%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills-left, .skills-right{
+        width: 100%;
+        height: 45%;
+    }
+    
+    .third-div{
+        width: 80%;
+        height: 10%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
