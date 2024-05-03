@@ -1,0 +1,118 @@
+.statistics{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.statistics-heading, .circles-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5%;
+}
+.circles-div{
+    justify-content: space-around;
+}
+
+.statistics-white, .statistics-letter {
+    font-size: 480%;
+    margin: 0px 1%;
+    padding: 0;
+    text-shadow: none; /* Reset text-shadow initially */
+}
+
+.statistics-white {
+    color: white;
+    animation: glowAnimation 2s linear infinite;
+}
+
+.statistics-letter {
+    color: #F2613F;
+    animation: glowAnimation 4s linear infinite;
+}
+
+@keyframes glowAnimation {
+    0% {
+        text-shadow: none;
+    }
+    50% {
+        text-shadow: 0 0 20px #F2613F; /* Adjust the glow intensity as needed */
+    }
+    100% {
+        text-shadow: none;
+    }
+}
+
+
+
+
+.sub-head, .value{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    transition: all 0.3s;
+}
+.sub-head{
+    font-size: 160%;
+    color: white;
+}
+
+.value{
+    font-size: 200%;
+    color: #F2613F;
+}
+
+.circle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 280px;
+    border-radius: 100%;
+    border: 3px solid transparent;
+    animation: borderAnimation 5s linear infinite; /* Adjust duration as needed */
+}
+@keyframes borderAnimation {
+    0% {
+        border-image-slice: 1;
+        border-image-source: radial-gradient(circle at top, #F2613F, transparent);
+    }
+    25% {
+        border-image-slice: 1;
+        border-image-source: radial-gradient(circle at right, #F2613F, #F6A16B, transparent);
+    }
+    50% {
+        border-image-slice: 1;
+        border-image-source: radial-gradient(circle at bottom, #F6A16B, #FBEAC8, transparent);
+    }
+    75% {
+        border-image-slice: 1;
+        border-image-source: radial-gradient(circle at left, #FBEAC8, white, transparent);
+    }
+    100% {
+        border-image-slice: 1;
+        border-image-source: radial-gradient(circle at top, white, #F2613F, transparent);
+    }
+}
+
+
+
+
+
+.circle:hover{
+
+    .sub-head{
+        color: #F2613F;
+    }
+
+    .value{
+        color: white;
+        text-shadow: 0 0 15px #F2613F;
+    }
+
+}

@@ -6,6 +6,9 @@ import '../styles/profile.css'
 export default function StillHere(){
     const stillhere = "STILL HERE?"
     const stillHere = stillhere.split('')
+    const thankYou = "Thank you for taking the time to explore my portfolio.";
+    const para1 = "At the heart of my work lies a dedication to continuous learning and improvement. Whether it's tackling LeetCode challenges to sharpen my problem-solving abilities or collaborating on projects that push the boundaries of innovation, I strive to deliver solutions that resonate with excellence.";
+    const para2= "I'm always eager to explore potential collaborations and opportunities to leverage my skills for impactful projects. Whether you're seeking a talented developer to join your team or looking to collaborate on a new venture, I'm here to discuss how we can work together to bring your vision to life.";
     return(
         <div className="still-here">
             <div className='still-here-heading'>
@@ -20,15 +23,15 @@ export default function StillHere(){
                     })
                 }
             </div>
-            <h2 className='still-here-subhead montserrat-bold'>Thank you for taking the time to explore my portfolio.</h2>
+            <h2 className='still-here-subhead montserrat-bold'>{thankYou}</h2>
             <div className='still-here-bottom'>
-                <h4 className='montserrat-regular still-here-text'>At the heart of my work lies a dedication to continuous learning and improvement. Whether it's tackling LeetCode challenges to sharpen my problem-solving abilities or collaborating on projects that push the boundaries of innovation, I strive to deliver solutions that resonate with excellence.</h4>
+                <h4 className='montserrat-regular still-here-text'>{para1}</h4>
                 <div className='spiral-icons'>
                     <GiDividedSpiral className='spirals'/> 
                     <GiDividedSpiral className='spirals'/> 
                     <GiDividedSpiral className='spirals'/> 
                 </div>
-                <h4 className='montserrat-regular still-here-text'>I'm always eager to explore potential collaborations and opportunities to leverage my skills for impactful projects. Whether you're seeking a talented developer to join your team or looking to collaborate on a new venture, I'm here to discuss how we can work together to bring your vision to life.</h4>
+                <h4 className='montserrat-regular still-here-text'>{para2}</h4>
             </div>
             <div className='connect-div'>
                 {connectWithMe()}
