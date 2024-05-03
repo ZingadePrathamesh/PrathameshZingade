@@ -32,11 +32,11 @@ export default function Skills(){
             <div className='skills-right'>
                 <div className='fourth-div'>
                     <div className='cell sedc'>REACT</div>
-                    <div className='cell js white-cell'>JAVA</div>
+                    <div className='cell db white-cell'>MYSQL<br/>MONGODB<br/>FIREBASE</div>
                     <div className='cell sedc'>SPRINGBOOT</div>
                 </div>
                 <div className='fifth-div'>
-                    <div className='cell db'>MYSQL<br/>MONGODB<br/>FIREBASE</div>
+                    <div className='cell js'>JAVA</div>
                     <div className='cell fidc white-cell'>OOPS</div>
                     <div className='cell fidc white-cell'>DSA</div>
                     <div className='cell fidc'>UI/UX</div>
