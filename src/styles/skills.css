@@ -1,0 +1,119 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+}
+.skills-subtitle{
+    font-size: 100%;
+    background: linear-gradient(to right, #FFFFFF, #F2613F);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    margin-bottom:5%;
+}
+
+.skills-letter, .skills-white{
+    font-size: 360%;
+    margin:0;
+    padding: 0;
+}
+.skills-letter:hover, .skills-white:hover{
+    filter: drop-shadow(0 0 4px #F2613F);
+}
+.skills-letter{
+    color: #F2613F;
+}
+.skills-white{
+    color: white;
+}
+
+.skills-collage{
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.skills-left, .skills-right{
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+}
+
+.third-div{
+    display: flex;
+    width: 10%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-div, .second-div, .fourth-div, .fifth-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F2613F;
+    background: transparent;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, scale 0.3s, box-shadow 0.6s;
+}
+.cell:hover {
+    background-color: rgba(242, 97, 63, 0.1); /* Orange color with transparency */
+    backdrop-filter: blur(10px); /* Add blur effect */
+    box-shadow: 0 0 8px 2px #F2613F;
+    z-index: 3;
+    scale: 1.2;
+}
+.white-cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 15px;
+}
+
+.fidc{
+    width: 94%;
+    flex-grow: 1;
+    margin: 3% 3%;
+    background-color: transparent;
+    color: white;
+}
+
+.sedc{
+    width: 94%;
+    flex-grow: 1;
+    margin: 3% 3%;
+    background-color: transparent;
+    color: white;
+}
+.js{
+    flex-grow: 3;
+    margin: 3% 3%;
+    background-color: transparent;
+    color: white;
+    width: 94%;
+}
+.db{
+    flex-grow: 3;
+    color: white;
+    width: 94%;
+    background: transparent;
+    margin: 3% 3%;
+    line-height: 160%;
+    text-align: center;
+}
