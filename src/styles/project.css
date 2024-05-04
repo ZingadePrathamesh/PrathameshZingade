@@ -1,0 +1,140 @@
+.project{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-left, .project-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 19%;
+    height: 100%;
+    margin: 0 2%;
+}
+.project-first, .project-second, .project-third{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}.project-first{
+    justify-content: end;
+    opacity: 0.1 ;
+}.project-second{
+    justify-content: center;
+    opacity: 0.4;
+}.project-third{
+    justify-content: start;
+    opacity:1 ;
+}
+
+.project-white, .project-letter{
+    margin: 0;
+    padding: 0;
+    font-size: 540%;
+    letter-spacing: 0;
+    line-height: 80%; 
+}
+
+.project-letter{
+    color: #F2613F;
+}.project-white{
+    color: white;
+}
+
+
+.project-middle{
+    display: flex;
+    margin: 0 4%;
+    width: 56%;
+    height: 100%;
+}
+
+.grid-container{
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.project1, .project2, .project3, .project4{    
+    display: flex;
+}
+
+.project1:hover, .project2:hover, .project3:hover, .project4:hover{  
+    .project-subtitle{
+        display: block;
+    }
+}
+
+.back{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.3s ease; /* Add transition for smooth color change */
+    position: relative;
+}
+.back:hover {
+    background-color: rgba(242, 97, 63, 0.8); /* Change background color on hover */
+}
+
+.back::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(242, 97, 63, 0), rgba(242, 97, 63, 0.8)); /* Gradient from transparent to semi-transparent */
+    z-index: -1; /* Place behind the content */
+}
+.project1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url('../assets/tree.jpg'); /* Replace 'path_to_your_image.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+}
+.project2{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-image: url('../assets/event.jpg'); /* Replace 'path_to_your_image.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+}
+.project3{
+    background-color: #745f5b;
+    background-image: url('../assets/music.jpg'); /* Replace 'path_to_your_image.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+}
+.project4{
+    background: linear-gradient(to right, #F2613F, black); 
+}
+
+.project-subtitle{
+    display: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.project-title{
+    width: 100%;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.pimage{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
