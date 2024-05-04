@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: fit-content;
+    height: 100vh;
 }
 .skills-subtitle{
     font-size: 100%;
@@ -32,7 +32,7 @@
 }
 
 .skills-collage{
-    width: 80%;
+    width: 60%;
     height: fit-content;
     display: flex;
     flex-direction: row;
@@ -63,6 +63,7 @@
 
 .cell{
     display: flex;
+    margin: 3% 3%;
     justify-content: center;
     align-items: center;
     border: 2px solid #F2613F;
@@ -71,8 +72,8 @@
     transition: background-color 0.3s ease, scale 0.3s, box-shadow 0.6s;
 }
 .cell:hover {
-    background-color: rgba(242, 97, 63, 0.1); /* Orange color with transparency */
-    backdrop-filter: blur(10px); /* Add blur effect */
+    background-color: rgba(242, 97, 63, 0.1);
+    backdrop-filter: blur(10px); 
     box-shadow: 0 0 8px 2px #F2613F;
     z-index: 3;
     scale: 1.2;
@@ -90,7 +91,6 @@
 .fidc{
     width: 94%;
     flex-grow: 1;
-    margin: 3% 3%;
     background-color: transparent;
     color: white;
 }
@@ -98,13 +98,11 @@
 .sedc{
     width: 94%;
     flex-grow: 1;
-    margin: 3% 3%;
     background-color: transparent;
     color: white;
 }
 .js{
     flex-grow: 3;
-    margin: 3% 3%;
     background-color: transparent;
     color: white;
     width: 94%;
@@ -114,9 +112,41 @@
     color: white;
     width: 94%;
     background: transparent;
-    margin: 3% 3%;
     line-height: 160%;
     text-align: center;
+}
+@media only screen and (max-width:1000px){
+    .skills{
+        height: 100vh;
+    }
+    .skills-subtitle{
+        text-align: center;
+        font-size: 80%;
+        margin: 5% 10%;
+    }
+    .skills-letter, .skills-white{
+        font-size: 240%;
+    }
+    .skills-collage{
+        width: 90%;
+        height: 60%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills-left, .skills-right{
+        width: 45%;
+        height: 100%;
+    }
+    
+    .third-div{
+        width: 10%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .cell{
+        font-size: 80%;
+    }
 }
 
 @media only screen and (max-width:767px){

@@ -44,7 +44,7 @@ export default function Statistics(){
             animateValue(setMedium, 0, 8, 1500, false);
             animateValue(setHard, 0, 3, 1500, false);
             
-          }, 8000);
+          }, 6000);
         };
         animationLoop(); // Start the animation loop initially
         return () => clearInterval(animationLoop);
