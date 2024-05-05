@@ -138,3 +138,47 @@
     height: 100%;
     object-fit: contain;
 }
+
+@media only screen and (max-width: 767px){
+    .project{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-left, .project-right{
+        flex-direction: column;
+        width: 100%;
+        height: 20%;
+    }
+    .project-first, .project-second, .project-third{
+        flex-direction: row;
+        width: 90%;
+    }
+
+    .project-middle{
+        width: 96%;
+        height: 56%;
+        margin: 2% 2%;
+    }
+
+    .project1, .project2, .project3, .project4{
+        font-size: 60%;
+    }
+
+
+    .project-letter, .project-white{
+        font-size: 360%;
+    }
+}
+@media only screen and (max-width: 1150px){
+
+    .project1, .project2, .project3, .project4{
+        font-size: 60%;
+    }
+
+
+    .project-letter, .project-white{
+        font-size: 360%;
+    }
+}
