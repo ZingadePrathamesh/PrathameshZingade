@@ -13,6 +13,7 @@
     background-clip: text;
     color: transparent;
     transition: text-shadow 1.5s;
+    margin-bottom: 10%;
 }
 .service-head:hover{
     background: linear-gradient(to left, #FFFFFF, #F2613F);

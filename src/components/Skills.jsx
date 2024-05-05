@@ -1,5 +1,4 @@
 import '../styles/skills.css';
-import skills from '../assets/skills.svg';
 
 export default function Skills(){
     const subtitle = "if you are looking for someone with the below mentioned skills, your search ends here!"

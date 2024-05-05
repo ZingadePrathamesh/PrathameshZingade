@@ -6,40 +6,46 @@ import { CgWebsite } from 'react-icons/cg';
 import React, { useEffect, useState } from 'react';
 
 export default function Services(){
-    const services= "SERVICES";
-    const servicesArray = services.split("");
+    const servicesArray = "SERVICES".split("");
 
-    const iconArray = [
-        TbWriting,
-        MdApi,
-        SiAffinitydesigner,
-        CgWebsite,
-        SiPowerpages,
-        MdPermIdentity    
-    ]
-
-    const servicesHeadings = [
-        "Content Writing",
-        "REST API",
-        "Graphic Designing",
-        "Web Applications",
-        "Landing Pages",
-        "Portfolio Sites"
-    ]
-
-    const servicesSubHeadings = [
-        "I can write blogs, articles, documentations and content that fits your applications.",
-        "i am good at developing secure aPI using spring boot 3 with spring security and jWT token.",
-        "using canva and Photoshop i can create stunning, posters, pamphlets, designs and much more. ",
-        "web applications that will help you bring your ideas in reality!",
-        "pages that are tailored specifically for your business including SEO",
-        "let me take care of showcasing your profession over the internet!"
-    ]
+    const servicesData = [
+        {
+            icon: TbWriting,
+            heading: "Content Writing",
+            subheading: "I can write blogs, articles, documentations and content that fits your applications."
+        },
+        {
+            icon: MdApi,
+            heading: "REST API",
+            subheading: "I am good at developing secure API using Spring Boot with Spring Security and JWT token."
+        },
+        {
+            icon: SiAffinitydesigner,
+            heading: "Graphic Designing",
+            subheading: "Using Canva and Photoshop, I can create stunning posters, pamphlets, designs, and much more."
+        },
+        {
+            icon: CgWebsite,
+            heading: "Web Applications",
+            subheading: "Web applications that will help you bring your ideas into reality!"
+        },
+        {
+            icon: SiPowerpages,
+            heading: "Landing Pages",
+            subheading: "Pages that are tailored specifically for your business including SEO."
+        },
+        {
+            icon: MdPermIdentity,
+            heading: "Portfolio Sites",
+            subheading: "Let me take care of showcasing your profession over the internet!"
+        }
+    ];
 
     const [flexDirection, setFlexDirection] = useState('row'); // Default flex direction for desktop
 
     useEffect(() => {
-        // Function to handle window resize event
+        // Function to handle window resize event for responsiveness
+        //especially for the icons used to depict the services on the left side.
         const handleResize = () => {
             // Update flex direction based on screen width
             if (window.innerWidth <= 767) {
@@ -69,24 +75,24 @@ export default function Services(){
                 {
                         (() => {
                             const elements = [];
-                            for (let i = 0; i < iconArray.length-3; i++) {
+                            for (let i = 0; i < servicesData.length-3; i++) {
                                 elements.push(
                                     <div className='service-l' style={{ flexDirection: flexDirection }} key={i}>
                                         {/* Conditionally render based on flex direction */}
                                         {flexDirection === 'row' ? (
                                             <>
                                                 <div className='service-l-text'>
-                                                    <h1 className='montserrat-bold service-l-head'>{servicesHeadings[i]}</h1>
-                                                    <h2 className='montserrat-regular service-l-subhead'>{servicesSubHeadings[i]}</h2>
+                                                    <h1 className='montserrat-bold service-l-head'>{servicesData[i].heading}</h1>
+                                                    <h2 className='montserrat-regular service-l-subhead'>{servicesData[i].subheading}</h2>
                                                 </div>
-                                                {React.createElement(iconArray[i], { className: 'service-l-icon' })}
+                                                {React.createElement(servicesData[i].icon, { className: 'service-l-icon', alt: servicesData[i].subheading  })}
                                             </>
                                         ) : (
                                             <>
-                                                {React.createElement(iconArray[i], { className: 'service-l-icon' })}
+                                                {React.createElement(servicesData[i].icon, { className: 'service-l-icon',  alt: servicesData[i].subheading })}
                                                 <div className='service-l-text'>
-                                                    <h1 className='montserrat-bold service-l-head'>{servicesHeadings[i]}</h1>
-                                                    <h2 className='montserrat-regular service-l-subhead'>{servicesSubHeadings[i]}</h2>
+                                                    <h1 className='montserrat-bold service-l-head'>{servicesData[i].heading}</h1>
+                                                    <h2 className='montserrat-regular service-l-subhead'>{servicesData[i].subheading}</h2>
                                                 </div>
                                             </>
                                         )}
@@ -111,13 +117,13 @@ export default function Services(){
                     {
                         (() => {
                             const elements = [];
-                            for (let i = 3; i < iconArray.length; i++) {
+                            for (let i = 3; i < servicesData.length; i++) {
                                 elements.push(
                                     <div className='service-r' key={i} style={{flexDirection:flexDirection}}>
-                                        {React.createElement(iconArray[i], { className: 'service-r-icon' })}
+                                        {React.createElement(servicesData[i].icon, { className: 'service-r-icon', alt: servicesData[i].subheading })}
                                         <div className='service-r-text'>
-                                            <h1 className='montserrat-bold service-r-head'>{servicesHeadings[i]}</h1>
-                                            <h2 className='montserrat-regular service-r-subhead'>{servicesSubHeadings[i]}</h2>
+                                            <h1 className='montserrat-bold service-r-head'>{servicesData[i].heading}</h1>
+                                            <h2 className='montserrat-regular service-r-subhead'>{servicesData[i].subheading}</h2>
                                         </div>
                                     </div>
                                 );
