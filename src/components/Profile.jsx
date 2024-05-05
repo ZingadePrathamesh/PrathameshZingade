@@ -5,16 +5,16 @@ import { LiaGithub, LiaLinkedinIn } from 'react-icons/lia';
 import { RiTwitterXLine } from 'react-icons/ri';
 import { IoMdMail } from 'react-icons/io';
 
+const name ="PRATHAMESH"
+const surname = "ZINGADE"
+
+// Convert name string to array
+const nameArray = name.split("");
+
+// Convert surname string to array
+const surnameArray = surname.split("");
+
 export default function Profile(){
-    const name ="PRATHAMESH"
-    const surname = "ZINGADE"
-
-    // Convert name string to array
-    const nameArray = name.split("");
-
-    // Convert surname string to array
-    const surnameArray = surname.split("");
-
     return(
         <div className="profile-div" id='profile'>
             <div className="visual">
@@ -26,19 +26,14 @@ export default function Profile(){
                 </div>
                 <div className='montserrat-bold name'>
                     <div>
-                        {nameArray.map((letter, index) => {
-                            if (index <= 2) {
-                                return <h4 className='white' id='glow-text' key={index}>{letter}</h4>; // Return JSX element
-                            } else {
-                                return <h4 id='glow-text' key={index}>{letter}</h4>; // Return JSX element
-                            }
-                        })}
+                        {nameArray.map((letter, index) => (
+                            <h4 className={index <= 2 ? 'white' : ''} id='glow-text' key={`name-${index}`}>{letter}</h4>
+                        ))}
                     </div>
                     <div>
-                        {surnameArray.map((letter, index) => {
-                            if(surname.length-index <= 3) return <h4 className='white' id='glow-text' key={index}>{letter}</h4>
-                            else return <h4 id='glow-text' key={index}>{letter}</h4>
-                        }
+                        {surnameArray.map((letter, index) => (
+                            <h4 className={surname.length - index <= 3 ? 'white' : ''} id='glow-text' key={`surname-${index}`}>{letter}</h4>
+                        )
                         )}
                     </div>
                 </div>

@@ -110,21 +110,27 @@ nav{
 
     .connect-btn-li{
         display: block;
-
+    }
+    .connect-lft-btn{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .nav-right{
         padding-right: 2%;
     }
     .nav-left-ul{
         height: 60%;
+        width: 40%;
         display: flex;
         background: #0c0c0c;
         flex-direction: column;
         align-items: end;
         position: fixed;
-        top: 4%;
+        top: 8%;
         right: -100vw;
-        padding: 5% 5%;
+        padding: 5% 0%;
         padding-left: 3%;
         box-shadow: 0 0 15px 2px #FFFFFF;
         transition: right 1s, box-shadow 0.2s;
@@ -146,7 +152,7 @@ nav{
 
     .nav-link{
         width: 100%;
-        padding: 0 60%;
+        padding: 0 20%;
         background-color: aqua;
     }
 
