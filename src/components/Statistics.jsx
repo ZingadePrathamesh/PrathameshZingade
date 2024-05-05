@@ -27,9 +27,9 @@ import { useEffect } from 'react';
 
 export default function Statistics(){
     const [projectCount, setProjectCount] = useState(0);
-    const [easy, setEasy] = useState(16);
-    const [medium, setMedium] = useState(8);
-    const [hard, setHard] = useState(3);
+    const [easy, setEasy] = useState(25);
+    const [medium, setMedium] = useState(10);
+    const [hard, setHard] = useState(2);
     const [cgpaScore, setcgpaScore] = useState(0.00);
     const subHeads = ["PROJECTS", "LEET CODE", "CGPA"]
     const values = [projectCount, `${easy}E ${medium}M ${hard}H`, cgpaScore]
@@ -40,9 +40,9 @@ export default function Statistics(){
           setInterval(() => {
             animateValue(setProjectCount, 0, 9, 1500, false);
             animateValue(setcgpaScore, 0.00, 9.09, 1500, true);
-            animateValue(setEasy, 0, 16, 1500, false);
-            animateValue(setMedium, 0, 8, 1500, false);
-            animateValue(setHard, 0, 3, 1500, false);
+            animateValue(setEasy, 0, 25, 1500, false);
+            animateValue(setMedium, 0, 10, 1500, false);
+            animateValue(setHard, 0, 2, 1500, false);
             
           }, 6000);
         };
@@ -53,7 +53,7 @@ export default function Statistics(){
 
 
     return(
-        <div className="statistics">
+        <div className="statistics" id='stats'>
             <div className="statistics-heading">
                 {
                     "STATISTICS".split('').map((letter, index)=>(

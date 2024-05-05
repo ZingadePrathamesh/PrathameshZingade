@@ -16,7 +16,7 @@ export default function Profile(){
     const surnameArray = surname.split("");
 
     return(
-        <div className="profile-div">
+        <div className="profile-div" id='profile'>
             <div className="visual">
                 <img src={myImage} className='profile-img' alt='This is the picture of prathamesh zingade'/>
             </div>
@@ -57,7 +57,7 @@ export function connectWithMe(){
                 <a  href='https://github.com/ZingadePrathamesh' target='_blank'><LiaGithub className='icon' size={30} /></a>
                 <a href='https://twitter.com/prathameshz2002' target='_blank'><RiTwitterXLine className='icon' size={24}/></a>
                 <a href='https://www.linkedin.com/in/prathamesh-zingade/' target='_blank'><LiaLinkedinIn className='icon' size={30} /></a>
-                <a href='' target='_blank'><IoMdMail className='icon' size={30}/> </a>
+                <a href="mailto:zingadeprathamesh12@gmail.com" target="_blank"><IoMdMail className='icon' size={30}/> </a>
             </div>
     );
 }

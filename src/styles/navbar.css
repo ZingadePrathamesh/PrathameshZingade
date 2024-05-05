@@ -4,7 +4,9 @@ nav{
     align-items: center;
     background: #0c0c0c;
     width: 100%;
+    height: 10vh;
     position: fixed;
+    z-index: 3;
 }
 
 .nav-left{
@@ -12,6 +14,7 @@ nav{
     display: flex;
     align-items: center;
     padding-left: 5%;
+    height: 100%;
 }
 
 .nav-right{
@@ -20,23 +23,39 @@ nav{
     justify-content: end;
     align-items: center;
     padding-right: 10%;
+    height: 100%;
 }
 
 .nav-left-ul{
     display: flex;
+    width: 70%;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
 }
 .nav-left li{
     list-style: none;
-    padding: 2% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    height: 100%;
+}
+.nav-link{
     background: linear-gradient(to right, #FFFFFF, #F2613F);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     border-radius: 10px;
     transition: box-shadow 0.6s, color 0.6s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.nav-left li:hover{
+.nav-link:hover{
     background: linear-gradient(to right, #FFFFFF, #F2613F);
     color: black;
     box-shadow: 0 0 15px 2px  #F2613F;
@@ -46,19 +65,36 @@ nav{
     display: none;
 }
 
+.connect-lft-btn{
+    display: none;
+}
+
 .menu-icon{
     display: none;
 }
 
-nav button{
-    padding: 3% 10%;
+.connect-btn, .connect-btn-a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.connect-btn{
+    width: 60%;
+    height: 50%;
+    background-color: #0c0c0c;
+    border: none;
+}
+.connect-btn-a{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
     border-radius: 8px;
     border: 1px solid #F2613F;
     background-color: #0c0c0c;
     color: #F2613F ;
-    transition: box-shadow 0.5s, border 0.5s;;
+    transition: box-shadow 0.5s, border 0.5s;
 }
-nav button:hover{
+.connect-btn-a:hover{
     cursor: pointer;
     border: 1px solid white;
     box-shadow: 0 0 15px 2px #F2613F;
@@ -74,11 +110,13 @@ nav button:hover{
 
     .connect-btn-li{
         display: block;
+
     }
     .nav-right{
         padding-right: 2%;
     }
     .nav-left-ul{
+        height: 60%;
         display: flex;
         background: #0c0c0c;
         flex-direction: column;
@@ -86,8 +124,8 @@ nav button:hover{
         position: fixed;
         top: 4%;
         right: -100vw;
-        padding: 5% 10%;
-        padding-left: 15%;
+        padding: 5% 5%;
+        padding-left: 3%;
         box-shadow: 0 0 15px 2px #FFFFFF;
         transition: right 1s, box-shadow 0.2s;
     }
@@ -102,7 +140,14 @@ nav button:hover{
     }
 
     .nav-left li{
-        margin:20% 0%;
-        padding: 10% 15%;
+        margin: 5% 0;
+        padding: 0 15%;
     }
+
+    .nav-link{
+        width: 100%;
+        padding: 0 60%;
+        background-color: aqua;
+    }
+
 }

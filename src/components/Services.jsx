@@ -59,7 +59,7 @@ export default function Services(){
     }, []); // Empty dependency array ensures effect runs only once on component mount
 
     return(
-        <div className="services">
+        <div className="services" id='services'>
             <div>
                 <h3 className='service-head montserrat-regular '>This is How I can help you in your ambitions!</h3>
             </div>

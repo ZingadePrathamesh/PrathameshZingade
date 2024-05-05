@@ -4,7 +4,7 @@ import skills from '../assets/skills.svg';
 export default function Skills(){
     const subtitle = "if you are looking for someone with the below mentioned skills, your search ends here!"
     return(
-    <div className="skills">
+    <div className="skills" id='skills'>
         <h2 className="skills-subtitle montserrat-regular">{subtitle}</h2>
         
         <div className='skills-collage'>

@@ -1,10 +1,4 @@
 import '../styles/project.css';
-import tree from '../assets/tree.jpg';
-import event from '../assets/event.jpg';
-import music from '../assets/music.jpg';
-
-
-
 
 export default function Project(){
     // function toggleClass(){
@@ -51,7 +45,7 @@ export default function Project(){
 
     ]
     return(
-        <div className="project" >
+        <div className="project" id='project'>
             <div className="project-left">
                     <div className='project-first'>
                         {
@@ -84,10 +78,10 @@ export default function Project(){
                             </div>
                         </div>
                         <div className='project2'>
-                            <div className='back'>
+                            <a className='back' href='https://github.com/ZingadePrathamesh/Event-Management-Web-Application' target='_blank'>
                                 <h1 className='project-title'>{projectTitles[1]}</h1>
                                 <h4 className='project-subtitle'>{projectSubtitles[1]}</h4>
-                            </div>
+                            </a>
                         </div>
                         <div className='project3'>
                             <div className='back'>
@@ -97,9 +91,9 @@ export default function Project(){
                             
                         </div>
                         <div className='project4'>
-                            <div className='back'>
+                            <a className='back' href='https://github.com/ZingadePrathamesh?tab=repositories' target='_blank'>
                                 <h1 className='project-title'>SEE MORE!</h1>
-                            </div>
+                            </a>
                         </div>
                     </div>
             </div>

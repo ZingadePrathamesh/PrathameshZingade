@@ -4,6 +4,7 @@
     height: 100vh;
     align-items: center;
     justify-content: center;
+    margin: 10% 0;
 }
 
 .project-left, .project-right{
@@ -79,6 +80,7 @@
     height: 100%;
     transition: background-color 0.3s ease; /* Add transition for smooth color change */
     position: relative;
+    text-decoration: none;
 }
 .back:hover {
     background-color: rgba(242, 97, 63, 0.8); /* Change background color on hover */
