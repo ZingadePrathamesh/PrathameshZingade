@@ -1,4 +1,3 @@
-import '../src/App.css';
 import Navbar from './components/Navbar';
 import Profile from './components/Profile';
 import Project from './components/Project';
@@ -10,7 +9,7 @@ import StillHere from './components/StillHere';
 function App() {
 
   return (
-    <div>
+    <>
       <Navbar/>
       <Profile/>
       <Project/>
@@ -18,7 +17,7 @@ function App() {
       <Skills/>
       <Statistics/>
       <StillHere/>
-    </div>
+    </>
 
   )
 }

@@ -120,11 +120,13 @@ export default function Services(){
                             for (let i = 3; i < servicesData.length; i++) {
                                 elements.push(
                                     <div className='service-r' key={i} style={{flexDirection:flexDirection}}>
-                                        {React.createElement(servicesData[i].icon, { className: 'service-r-icon', alt: servicesData[i].subheading })}
-                                        <div className='service-r-text'>
-                                            <h1 className='montserrat-bold service-r-head'>{servicesData[i].heading}</h1>
-                                            <h2 className='montserrat-regular service-r-subhead'>{servicesData[i].subheading}</h2>
-                                        </div>
+                                        <>
+                                            {React.createElement(servicesData[i].icon, { className: 'service-r-icon', alt: servicesData[i].subheading })}
+                                            <div className='service-r-text'>
+                                                <h1 className='montserrat-bold service-r-head'>{servicesData[i].heading}</h1>
+                                                <h2 className='montserrat-regular service-r-subhead'>{servicesData[i].subheading}</h2>
+                                            </div>
+                                        </>
                                     </div>
                                 );
                             }
