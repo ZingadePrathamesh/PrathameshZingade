@@ -16,6 +16,7 @@ The primary goal behind creating this portfolio was to refine my expertise in va
 - **Deployment on GitHub Pages:** Deploying the portfolio seamlessly on GitHub Pages.
 - **Git and GitHub:** Managing version control and collaboration using Git and GitHub.
 
+![Lighthouse Report Analysis](src/assets/portfolio%20performance.png)
 ## Technologies Used
 ### Vite
 Vite is a next-generation build tool that significantly accelerates the development process by providing instant server start and lightning-fast hot module replacement (HMR). With Vite, development becomes more efficient and enjoyable.
